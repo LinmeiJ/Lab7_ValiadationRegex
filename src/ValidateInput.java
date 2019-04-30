@@ -43,7 +43,7 @@ public class ValidateInput {
 	//Method purpose:valideate names
 	public static void validateNames(Scanner sc, String name, String dataInput) {
 		char c = dataInput.charAt(0);
-		if (dataInput.matches("[a-zA-Z ]+") && Character.isUpperCase(c) && dataInput.length() <= 30){
+		if (dataInput.matches(dataInput.matches("[A-Z]{1}[a-z]+{1,29}"){
 			System.out.printf("A valid %s! %n", name);
 		} else {
 			System.out.printf("Sorry, %s is invalid. %n", name);
